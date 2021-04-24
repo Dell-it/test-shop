@@ -1,0 +1,123 @@
+h1, .h1 {
+  font-size: $fz-h-xl;
+}
+
+h2, .h2 {
+  font-size: $fz-h-lg;
+}
+
+h3, .h3 {
+  font-size: $fz-h-md;
+}
+
+h4, .h4 {
+  font-size: $fz-h-sm;
+}
+
+body {
+  position: relative;
+  max-height: 1000000px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: $fontPrimary;
+  font-size: $fz-md;
+  font-weight: 400;
+  color: $colorBlack;
+  line-height: 1.4;
+  background-color: $colorGrayEL;
+}
+
+button {
+  padding: 0;
+  -webkit-appearance: none;
+
+  border: 0;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: $fontPrimary;
+  user-select: none;
+}
+
+input {
+  text-overflow: ellipsis;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: $fontPrimary;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='tel'],
+textarea {
+  font-size: inherit;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder {
+  color: $colorBlack;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid black;
+  -webkit-text-fill-color: $colorBlack;
+  -webkit-box-shadow: 0 0 0 1000px rgba($colorMain, 0.05) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea {
+  -webkit-appearance: none;
+  resize: none;
+  font-family: $fontPrimary;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  width: 1448px;
+  max-width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.containerWide {
+  width: 1860px;
+  max-width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.15s ease;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.pageTitle {
+  text-align: center;
+  margin: 40px 0 60px;
+}
